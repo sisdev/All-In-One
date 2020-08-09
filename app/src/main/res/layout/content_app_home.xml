@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.sisoft.all_in_one.AppHome"
+    tools:showIn="@layout/app_bar_app_home">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="Deals/Promotions"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/viewPromos"
+        android:onClick="ViewPromos"
+        android:padding="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner_1"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="View Business Category"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/btn1_biz_cat"
+        android:onClick="ViewBizCategory"
+        android:background="@drawable/rounded_corner_1"
+        android:padding="2dp"
+         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="Search Business"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@drawable/rounded_corner_1"
+        android:id="@+id/btn_search_biz"
+        android:onClick="search_biz"
+        android:gravity="center"
+        android:padding="10dp"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:text="My Business"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/button2"
+        android:padding="2dp"
+        android:onClick="btn_my_biz"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner_1"
+        />
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6926507421176998/8400291744">
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>

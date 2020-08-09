@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    >
+
+    <TextView
+        android:id="@+id/promo_code"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="promo_code"
+        android:gravity="center_vertical"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/promo_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Promo Text1"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/promo_code"
+        />
+
+    <TextView
+        android:id="@+id/promo_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Promo_text2"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/promo_text1"
+        />
+
+    <TextView
+        android:id="@+id/validity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promo_text2"
+        android:layout_alignParentLeft="true"
+        android:text="Valid from -- Upto .." />
+
+    <Button
+        android:id="@+id/deletePromo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/validity"
+        android:text="Delete"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

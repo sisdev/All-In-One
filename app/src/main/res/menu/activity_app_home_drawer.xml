@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_deal"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Browse Deal" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Browse Category" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Search Business" />
+
+        <item
+            android:id="@+id/nav_biz_owner"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Manage Business" />
+
+        <item
+            android:id="@+id/nav_sync"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Sync for Data Updates" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share App" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Email Comments" />
+            <item
+                android:id="@+id/nav_about_app"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About App" />
+
+        </menu>
+    </item>
+</menu>
